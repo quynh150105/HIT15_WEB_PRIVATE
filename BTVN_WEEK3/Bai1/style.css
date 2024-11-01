@@ -1,54 +1,62 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  background-color: rgb(252, 197, 224);
 }
 
-.box1 {
-  background-color: rgb(255, 202, 211);
+.div1 {
+  margin-top: 250px;
   align-items: center;
   text-align: center;
-  width: 550px;
-  height: 200px;
-  margin: auto;
-  margin-top: 200px;
-  border-radius: 18px;
-  border: 1px solid rgb(255, 108, 133);
-  padding: 3vh;
+  background-color: rgb(255, 169, 183);
+  height: max-content;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.box0 {
-  /* padding-top: 300px; */
-  margin-top: 30px;
-  margin: auto;
-}
-
-.box {
-  background-color: rgb(255, 161, 177);
-  height: 250px;
-  width: 100%;
+.div2 {
+  background-color: rgb(251, 217, 222);
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  border-radius: 20px;
+  padding: 25px;
+  margin-left: 330px;
+  padding-top: 10px;
+  border-color: rgb(255, 107, 132);
+  margin-bottom: 23px;
 }
 
 .button {
-  border-radius: 20px;
   width: 100px;
+  border-radius: 20px;
   background-color: pink;
-  margin-top: 10px;
 }
 
 .input {
   border-radius: 20px;
-  width: 300px;
-  margin-top: 10px;
+  width: 280px;
+  margin-bottom: 8px;
 }
 
-.get_your {
+.get {
   font-weight: bold;
-  font-size: larger;
-  margin-top: 10px;
 }
 
 .loki {
   font-size: smaller;
-  margin-top: 10px;
+}
+
+.G {
+  color: blue;
+}
+
+.oe {
+  color: red;
+}
+
+.l {
+  color: green;
+}
+
+.o {
+  color: orange;
 }
