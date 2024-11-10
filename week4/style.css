@@ -1,0 +1,92 @@
+:root {
+  --color: hsl(30, 66%, 76%);
+}
+
+img {
+  border-radius: 25px;
+  width: 100%;
+}
+h1 {
+  font-family: Serif;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+
+.conten {
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 32px;
+}
+
+.conten1 {
+  font-size: 16px;
+  color: var(--color);
+}
+
+.conten2 {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+}
+
+.conten2 h2 {
+  margin: auto;
+  color: hsl(332, 51%, 32%);
+}
+
+.conten3 {
+  color: var(--color);
+}
+
+.conten3 h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+.conten4 conten {
+  color: var(--color);
+}
+
+.conten4 h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+.ct4span {
+  color: hsl(30, 10%, 34%);
+  font-weight: bolder;
+}
+
+.conten5 h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+.ct4span1 {
+  color: var(--color);
+}
+
+.ct2span1 {
+  color: hsl(30, 10%, 34%);
+  font-weight: bolder;
+}
+
+.ct2span2 {
+  color: var(--color);
+}
+
+.td1_1 {
+  display: inline-block;
+  margin-right: 170px;
+  margin-bottom: 10px;
+}
+
+.td2 {
+  color: hsl(14, 45%, 36%);
+  font-weight: bolder;
+}
+
+.td1_1 {
+  color: hsl(30, 66%, 76%);
+}
