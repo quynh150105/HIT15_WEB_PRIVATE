@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/BTVN_WEEK5/img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.content1 h1 {
+  position: absolute;
+  top: 20%;
+  color: rgba(161, 215, 96, 0.771);
+  border-color: black;
+  font-size: 64px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.content1 input {
+  top: 35%;
+  position: absolute;
+  height: 40px;
+  width: 390px;
+  border-radius: 16px;
+}
+
+.input::placeholder {
+  color: rgb(223, 197, 48);
+  font-size: 16px;
+}
+
+.img1 {
+  width: 85em;
+  height: 388px;
+}
+
+.content2 {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+  gap: 167px;
+}
+
+.content2_1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.button2_1 {
+  border-radius: 16px;
+  margin-bottom: 28px;
+  width: 220px;
+  height: 36px;
+  font-weight: bolder;
+  font-size: 16px;
+  background-color: orange;
+  color: white;
+}
+
+.button2_2 {
+  border-radius: 16px;
+  margin-bottom: 28px;
+  width: 220px;
+  height: 36px;
+  font-weight: bolder;
+  font-size: 16px;
+  color: rgb(223, 197, 48);
+}
+
+button:hover {
+  background-color: orange;
+  color: white;
+}
+/* content 2_2*/
+
+.content2_2 {
+  display: flex;
+  justify-content: space-around;
+  gap: 35px;
+}
+
+.content2_2 p {
+  font-size: 28px;
+}
+
+.content2_2 button {
+  height: 36px;
+  width: 300px;
+  border-radius: 8px;
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+  background-color: orange;
+}
+
+.img2 {
+  width: 300px;
+  height: 180px;
+}
+
+.img3 {
+  width: 300px;
+  height: 180px;
+}
+
+.img4 {
+  width: 300px;
+  height: 180px;
+}
+
+.option1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.option2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.option3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
