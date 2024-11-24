@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 1440px;
+  height: 813px;
+  top: -430px;
+  left: -720px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.content1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 220px;
+  padding: 20px;
+  margin-left: 50px;
+  margin-top: 80px;
+  width: 100%;
+}
+
+.content1_1 {
+  display: flex;
+  gap: 10px;
+}
+
+.content1_1 p {
+  color: #051441;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.content1_2 {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.content1_3 {
+  display: flex;
+  /* margin-left: 100px; */
+  gap: 38px;
+}
+
+.content1_3 button {
+  width: 110px;
+  height: 36px;
+  border-radius: 20px;
+}
+
+.content1_3 .bu1 {
+  color: #f5830b;
+}
+
+.content1_3 .bu2 {
+  color: #ffffff;
+  background-color: #f67102;
+}
+
+.content_2 {
+  display: flex;
+  margin-top: 50px;
+  gap: 184px;
+}
+
+.content2_1 {
+  width: 40%;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.content2_1 p {
+  padding-bottom: 40px;
+  font-size: 16px;
+}
+
+.content2_1 h1 {
+  padding-bottom: 4cqh;
+  font-size: 50px;
+}
+
+.content2_1 .content2_1_1 {
+  display: flex;
+  gap: 24px;
+}
+div .but1 {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #f67906;
+}
+
+div .but2 {
+  align-items: center;
+  width: 35px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.but2 img {
+  margin-top: 3.8px;
+  margin-left: 3px;
+}
+
+.content2_2 {
+  position: relative;
+  width: 60%;
+  height: 70%;
+}
+
+.base {
+  position: absolute;
+  width: 513px;
+  height: 458px;
+  top: 89px;
+  left: 2px;
+  gap: 0px;
+  border-radius: 24px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.anh {
+  position: absolute;
+  width: 512px;
+  height: 555px;
+}
+
+.people {
+  position: absolute;
+  bottom: 40px;
+}
+
+.icon1 {
+  position: absolute;
+  right: 654px;
+  top: 128px;
+}
+
+.icon2 {
+  position: absolute;
+  right: 144px;
+  top: 30px;
+}
+
+.icon3 {
+  position: absolute;
+  right: 146px;
+  top: 321px;
+}
+
+.icon4 {
+  position: absolute;
+  top: 354px;
+  right: 568px;
+}
+
+.icon5 {
+  position: absolute;
+  top: 412px;
+  right: 422px;
+}
+
+.icon6 {
+  position: absolute;
+  right: 471px;
+  top: 348px;
+}
+
+.icon7 {
+  position: absolute;
+  right: 320px;
+  top: 210px;
+}
+
+.icon {
+  position: absolute;
+  left: 766.5px;
+  top: 39px;
+}
