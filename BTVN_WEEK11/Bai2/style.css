@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.content2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 8px;
+}
+
+.content3 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-right: 450px;
+  width: max-content;
+  gap: 200px;
+  font-size: 19px;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  width: 50%;
+  gap: 10px;
+  margin: auto;
+}
+
+.odd_number {
+  background-color: #79d7be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 12%;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.even_number {
+  background-color: #fddb3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 12%;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.prime_number {
+  background-color: #fd5e53;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 12%;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+input {
+  border-color: #79d7be;
+  border-style: solid;
+  border-width: 3px;
+  width: 480px;
+  height: 30px;
+  font-size: 18px;
+}
+
+button {
+  background-color: #79d7be;
+  border-color: #79d7be;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+  border-style: solid;
+  width: 80px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
