@@ -4,10 +4,6 @@ const weight = document.querySelector(".weight");
 const height = document.querySelector(".height");
 const button = document.querySelector("button");
 
-function isAlpha(str) {
-  return /^[a-zA-Z]+$/.test(str);
-}
-
 button.addEventListener("click", () => {
   if (height.value == "" || weight.value == "") {
     title.textContent = "Bạn chưa nhập chiều cao và cân nặng!";
