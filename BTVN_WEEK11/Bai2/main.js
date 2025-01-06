@@ -1,21 +1,19 @@
-const n = document.querySelector("input");
+const input = document.querySelector("input");
 const button = document.querySelector("button");
-const sochan = document.querySelector(".sochan");
-const sole = document.querySelector(".sole");
-const songto = document.querySelector(".songto");
-const content3 = document.querySelector(".content3");
+const even_number = document.querySelector(".even");
+const odd_number = document.querySelector(".odd");
+const prime_number = document.querySelector(".prime");
+const result = document.querySelector(".result");
 const table = document.querySelector(".table");
 
-// table.textContent = "red";
-// table.style.backgroundColor = "blue";
 document.body.appendChild(table);
 
-function isPrime(n) {
-  if (n < 2) {
+function isPrime(input) {
+  if (input < 2) {
     return false;
   }
-  for (let i = 2; i <= Math.sqrt(n); i++) {
-    if (n % i == 0) {
+  for (let i = 2; i <= Math.sqrt(input); i++) {
+    if (input % i == 0) {
       return false;
     }
   }
@@ -23,49 +21,39 @@ function isPrime(n) {
 }
 
 button.addEventListener("click", () => {
-  let count1 = 0;
-  let count2 = 0;
-  let count3 = 0;
+  let count_even = 0;
+  let count_odd = 0;
+  let count_prime = 0;
 
   table.innerHTML = "";
 
-  for (let i = 0; i < parseInt(n.value); i++) {
+  for (let i = 0; i < parseInt(input.value); i++) {
     const number = document.createElement("span");
 
     if (i % 2 == 0) {
       number.className = "odd_number";
       number.textContent = i;
-      count1++;
+      count_even++;
       if (isPrime(i)) {
         number.className = "prime_number";
         number.textContent = i;
-        count3++;
+        count_prime++;
       }
     } else {
       number.className = "even_number";
       number.textContent = i;
-      count2++;
+      count_odd++;
       if (isPrime(i)) {
         number.className = "prime_number";
         number.textContent = i;
-        count3++;
+        count_prime++;
       }
     }
 
     table.appendChild(number);
   }
 
-  sochan.textContent = `Số chẵn: ${count1}`;
-  sole.textContent = `Số lẻ: ${count2}`;
-  songto.textContent = `Số nguyên tố: ${count3}`;
-
-  console.log(count1);
-  console.log(count2);
-  console.log(count3);
+  even_number.textContent = `${count_even}`;
+  odd_number.textContent = `${count_odd}`;
+  prime_number.textContent = `${count_prime}`;
 });
-
-console.log(n);
-console.log(button);
-console.log(sochan);
-console.log(sole);
-console.log(songto);
