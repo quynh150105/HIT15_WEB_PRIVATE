@@ -7,6 +7,72 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <div class="options">
+        <h1>Vẽ hình v1.0</h1>
+        <table>
+          <tr>
+            <td>Chiều rộng</td>
+            <td>
+              <input id="width" type="text" placeholder="Nhập chiều rộng" />
+            </td>
+          </tr>
+          <tr>
+            <td>Chiều cao</td>
+            <td>
+              <input id="height" type="text" placeholder="Nhập chiều cao" />
+            </td>
+          </tr>
+          <tr>
+            <td>Padding</td>
+            <td>
+              <input id="padding" type="text" placeholder="Nhập padding" />
+            </td>
+          </tr>
+          <tr>
+            <td>Margin</td>
+            <td><input id="margin" type="text" placeholder="Nhập margin" /></td>
+          </tr>
+          <tr>
+            <td>Màu nền (Hex, gba, rgba)</td>
+            <td>
+              <input
+                id="background_color"
+                type="text"
+                placeholder="Nhập màu nền"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Hình nền (Đường link online)</td>
+            <td>
+              <input
+                id="background_image"
+                type="text"
+                placeholder="Nhập đường dẫn hình nền"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Màu chữ</td>
+            <td>
+              <input id="text_color" type="text" placeholder="Nhập màu chữ" />
+            </td>
+          </tr>
+          <tr>
+            <td>Nội dung nhỏ</td>
+            <td>
+              <input id="content" type="text" placeholder="Nhập nội dung" />
+            </td>
+          </tr>
+        </table>
+        <button class="draw">Vẽ hình</button>
+        <button class="reset">Reset</button>
+      </div>
+      <div class="output">
+        <div class="shape">Xin chào</div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
