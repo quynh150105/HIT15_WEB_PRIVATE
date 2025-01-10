@@ -1,4 +1,3 @@
-/*
 document.addEventListener("keydown", function (event) {
   if (event.key === "F12") {
     event.preventDefault();
@@ -15,7 +14,7 @@ document.addEventListener("contextmenu", function (event) {
   event.preventDefault();
   alert("chuột phải bị vô hiệu hóa");
 });
-*/
+
 const String = document.querySelector(".String");
 const button = document.querySelector(".check");
 const title = document.querySelector(".title");
