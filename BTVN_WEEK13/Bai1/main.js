@@ -24,30 +24,35 @@ const box = document.querySelector(".box");
 button.addEventListener("click", () => {
   result.innerHTML = "";
 
-  const originalString = String.value;
+  const originalString = String.value.trim();
 
   const cleanedString = originalString.toLowerCase();
 
   const reversedString = cleanedString.split("").reverse().join("");
 
+  // xử lý khi không có input đầu vào hoặc toàn khoảng trắng
+  if (originalString === "") {
+    title.textContent = "input invalid";
+    return;
+  }
+
+  // trả về kết quả khi đảo ngược chuỗi
   if (reversedString === originalString) {
     title.textContent = "Đây là Palindrome!";
   } else {
     title.textContent = "Đây không là Palindrome!";
   }
 
+  // khi input đầu vào hợp lệ
   for (let i = 0; i < originalString.length; i++) {
     const char = document.createElement("span");
     const currentChar = originalString[i];
-    if (/[a-zA-Z0-9]/.test(currentChar)) {
-      const Index = cleanedString.indexOf(currentChar.toLowerCase());
-      if (cleanedString[Index] === reversedString[Index]) {
-        char.className = "correct";
-      } else {
-        char.className = "wrong";
-      }
-    } else {
+    const Index = cleanedString.indexOf(currentChar.toLowerCase());
+
+    if (cleanedString[Index] === reversedString[Index]) {
       char.className = "correct";
+    } else {
+      char.className = "wrong";
     }
     char.textContent = currentChar;
     result.appendChild(char);
