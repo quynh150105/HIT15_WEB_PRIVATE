@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 1vh;
+  width: 90vh;
+  margin-top: 6%;
+  margin-bottom: 2vh;
+}
+
+.title {
+  margin-top: 6vh;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section_1 {
+  width: 90%;
+  height: 18vh;
+  background-color: #ffffff;
+  padding: 2.5vh;
+  border: 0.5px solid black;
+  border-radius: 2px;
+  margin-bottom: 2vh;
+  margin-top: 4vh;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.section_2 {
+  display: flex;
+  background-color: #ffffff;
+  gap: 2vh;
+  margin-bottom: 4vh;
+  width: 90%;
+  height: 4.5vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_2 input {
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 0.5px solid;
+  outline: none;
+  height: 4.5vh;
+  padding-left: 1.3vh;
+  padding-right: 1.3vh;
+}
+
+.section_2 button {
+  background-color: #218838;
+  border-radius: 4px;
+  width: 6vh;
+  height: 100%;
+  border: 0.5px solid;
+  outline: none;
+  color: white;
+}
+
+.List {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.List .mission {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background-color: #ffffff;
+  height: 12vh;
+  width: 70%;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.mission .info {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 6vh;
+  width: 65%;
+}
+
+.info p {
+  background-color: #ffffff;
+}
+
+.new_mission_info {
+  width: 60%;
+  height: 6vh;
+  background-color: #ffffff;
+  border: 0.5px solid black;
+  border-radius: 2px;
+  box-sizing: border-box;
+  resize: none;
+  padding: 1vh;
+}
+
+.mission .buttons {
+  display: flex;
+  width: 45%;
+  background-color: #ffffff;
+  padding-right: 6vh;
+  justify-content: end;
+  gap: 2vh;
+}
+
+.buttons button {
+  border-radius: 3px;
+  border: none;
+  color: white;
+  height: 3.7vh;
+}
+
+.complete {
+  background-color: #007bff;
+  width: 12vh;
+}
+
+.delete {
+  background-color: #c82333;
+  width: 8vh;
+}
+
+.edit {
+  background-color: #ffc107;
+  width: 7vh;
+}
