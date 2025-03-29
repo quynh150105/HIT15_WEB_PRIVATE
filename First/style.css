@@ -1,0 +1,341 @@
+/* General styles */
+body {
+  font-family: "Arial", sans-serif; /* More modern font */
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Lighter background */
+  color: #333;
+  line-height: 1.6; /* Improved readability */
+}
+
+.container {
+  width: 85%; /* Wider container for better spacing */
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px; /* Add padding inside the container */
+}
+
+/* Header */
+header {
+  background: #2c3e50; /* Darker header color */
+  color: white;
+  padding: 1.5em 0; /* More padding */
+  text-align: center;
+  border-bottom: 3px solid #e74c3c; /* Accent color */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em; /* Larger title */
+  color: #ff69b4; /* Pink */
+}
+
+header p {
+  font-style: italic;
+  color: #ddd;
+}
+
+/* Navigation */
+nav {
+  background: #34495e; /* Slightly lighter navigation */
+  color: white;
+  padding: 0.8em 0; /* Adjusted padding */
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex; /* Make the navigation links horizontal */
+}
+
+nav li {
+  margin-right: 25px; /* More spacing between links */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav a:hover {
+  color: #ff69b4; /* Pink */
+}
+
+.search-box {
+  display: flex;
+}
+
+.search-box input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-box button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+  background-color: #c0392b;
+}
+
+.cart a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cart a:hover {
+  color: #ff69b4; /* Pink */
+}
+
+/* Hero Section */
+.hero {
+  background: #ecf0f1; /* Very light background */
+  padding: 4em 0; /* Larger padding */
+  text-align: center;
+  margin-bottom: 30px; /* Space before the next section */
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #ff69b4; /* Pink */
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #777;
+}
+
+.hero .cta-button {
+  background: #e74c3c;
+  color: white;
+  padding: 1.2em 2.5em;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.hero .cta-button:hover {
+  background-color: #c0392b;
+}
+
+/* Featured Products */
+.featured-products {
+  padding: 2em 0;
+}
+
+.featured-products h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ff69b4; /* Pink */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    minmax(280px, 1fr)
+  ); /* Larger product boxes */
+  gap: 30px;
+  padding: 0 20px; /* Add some padding to the grid */
+}
+
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.product img {
+  max-width: 100%;
+  height: 220px; /* Fixed height for image */
+  object-fit: cover; /* Cover the area, cropping if needed */
+  margin-bottom: 15px;
+}
+
+.product h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #ff69b4; /* Pink */
+}
+
+.product .price {
+  font-weight: bold;
+  color: #ff69b4; /* Pink */
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.product button {
+  background: #27ae60; /* Green button */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #219651;
+}
+
+/* Categories */
+.categories {
+  padding: 2em 0;
+  background: #34495e; /* Darker background for categories */
+  color: white;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ff69b4; /* Pink */
+}
+
+.categories ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.categories li {
+  margin: 10px 20px;
+}
+
+.categories a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.categories a:hover {
+  color: #ff69b4; /* Pink */
+}
+
+/* Footer */
+footer {
+  background: #2c3e50; /* Darker footer color */
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #ff69b4; /* Pink */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%; /* Adjust container width on smaller screens */
+    padding: 0 10px;
+  }
+
+  header .container {
+    flex-direction: column; /* Stack header elements */
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  nav .container {
+    flex-direction: column; /* Stack nav elements */
+    align-items: stretch; /* Stretch items to full width */
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .search-box {
+    margin-top: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    ); /* Smaller product boxes on small screens */
+    padding: 0 10px;
+  }
+
+  footer .container {
+    flex-direction: column; /* Stack footer elements */
+    text-align: center;
+  }
+
+  .social-media {
+    margin-top: 10px;
+  }
+}
