@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4f4f9;
+  gap: 3vh;
+}
+
+h1,
+h2 {
+  padding-left: 3.5vh;
+  /* text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 3.5vh;
+  gap: 3vh;
+  width: 98%;
+}
+
+.product {
+  display: grid;
+  grid-row: span 5;
+  background-color: white;
+  border: none;
+  border-radius: 3%;
+  text-align: center;
+  justify-items: center;
+  gap: 2vh;
+}
+
+.product:hover {
+  /* background-color: red; */
+}
+
+.img {
+  padding-top: 2vh;
+  width: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img:hover {
+  transform: scale(1.1); /* Phóng to ảnh lên 1.2 lần khi hover */
+}
+
+.title {
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+.description {
+  color: #666666;
+  margin: 0 2vh;
+  display: none;
+}
+
+.price {
+  color: #e63946;
+  font-weight: bolder;
+}
+
+.rating {
+  display: flex;
+  gap: 1vh;
+  color: #ffab2d;
+  padding-bottom: 2vh;
+}
