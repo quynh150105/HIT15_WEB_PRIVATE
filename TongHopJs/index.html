@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TongHopJs</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      table {
+        margin: auto;
+        margin-top: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Nhap mang</th>
+        <td><input type="text" id="input" /></td>
+      </tr>
+      <tr>
+        <th>Mang sau khi sap xep</th>
+        <td><input type="text" id="output" /></td>
+      </tr>
+      <tr align="center">
+        <td colspan="2">
+          <input type="button" value="Huy" onclick="huy()" />
+          <input type="button" value="Sap Xep" onclick="sapXep()" />
+        </td>
+      </tr>
+    </table>
+    <script>
+      /* sap xep mang
+      function huy() {
+        document.getElementById("input").value = "";
+        document.getElementById("output").value = "";
+      }
+      function sapXep() {
+        let input = document.getElementById("input").value.trim();
+        let output = document.getElementById("output");
+        let numbers = input.split(",");
+        let array = [];
+        for (let i = 0; i < numbers.length; i++) {
+          let num = parseFloat(numbers[i]);
+          array.push(num);
+        }
+        array.sort();
+        console.log(array);
+        output.value = array.join(",");
+      }
+      */
+
+      /* regex password
+        function check() {
+          const username = document.getElementById("Username").value;
+          const password = document.getElementById("Password").value;
+          const check1 = /^(?!\d)[A-Za-z.\d]{8,}$/;
+          const check2 = /[A-Z]/;
+          if (username === "" || password === "") {
+            alert("nhap du thong tin");
+            return;
+          } else {
+            if (check1.test(password) && check2.test(password)) {
+              alert("ban da nhap dung");
+              return;
+            } else {
+              alert("ban da nhap sai");
+              return;
+            }
+          }
+        }
+      */
+
+      /* in ra ten
+
+          function huy() {
+        document.getElementById("input").value = "";
+        document.getElementById("output").value = "";
+      }
+      function sapXep() {
+        let input = document.getElementById("input").value.trim();
+        let name = input.split(" ");
+        // let correctName = [];
+        // console.log(name);
+        // for (let i = 0; i < name.length; i++) {
+        //   if (name[i] == " ") {
+        //     continue;
+        //   }
+        //   correctName.push(name[i]);
+        // }
+        let index = name.length - 1;
+        // console.log();
+        output.value = name[index];
+      }
+      */
+
+      /* dem so le
+        function Dem() {
+        const input = document.getElementById("input").value.trim();
+        var count = 0;
+        if (!isNaN(input)) {
+          let num = parseFloat(input);
+          if (num > 0) {
+            while (num > 0) {
+              let i = num % 10;
+              if (i % 2 != 0) {
+                count++;
+              }
+              num = Math.floor(num / 10);
+            }
+            document.getElementById("output").value = count;
+            return;
+          } else {
+            alert("nhap so lon hon 0");
+            return;
+          }
+        } else {
+          alert("nhap sai dinh dang");
+          return;
+        }
+      }
+
+      function Huy() {
+        document.getElementById("output").value = "";
+        document.getElementById("input").value = "";
+      }
+      */
+    </script>
+  </body>
+</html>
